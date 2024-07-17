@@ -1,0 +1,216 @@
+/* General responsive styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  /* Add margin: 0 to remove default body margins */
+}
+
+/* Container for responsive layout */
+.container {
+  margin-top: 0px;
+  padding: 0 20px;
+  /* Add horizontal padding for better margins on smaller screens */
+}
+
+/* Responsive font sizes */
+h2 {
+  margin-bottom: 150px;
+  text-align: center;
+  color: #f98a2c;
+  font-size: 3rem;
+  /* Use rem units for responsive font sizes */
+}
+
+/* Responsive buttons */
+.btn {
+  margin-right: 5px;
+  padding: 8px 12px;
+  /* Adjust padding for smaller buttons */
+  font-size: 0.8rem;
+  /* Use rem units for responsive font sizes */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box {
+  width: 450px;
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.form-box .field {
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
+.form-box :where(.input label, .gender-box label, .select-box label) {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  color: #253047;
+}
+
+.form-box .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  margin: 5px auto;
+  border-radius: 5px;
+  border: 1.5px solid #ccc;
+  outline: none;
+}
+
+.form-box .select-box select {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1.5px solid #ccc;
+  outline: none;
+  color: #45484d;
+}
+
+.form-box .select-box option {
+  color: #45484d;
+}
+
+.form-box .gender-box {
+  margin: 5px 0 15px 0;
+}
+
+.form-box :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form-box .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: rgb(249, 138, 44);
+}
+
+.form-box :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #707070;
+}
+
+.submit-button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  /* Adjusted margin to separate from the submit button */
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(249, 138, 44);
+  /* Different color for cancel button */
+}
+
+.submit-button:hover {
+  background: rgb(252, 188, 133);
+}
+
+.cancel-button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  /* Adjusted margin to separate from the submit button */
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(219, 76, 76);
+  /* Different color for cancel button */
+}
+
+.cancel-button:hover {
+  background: rgb(131, 45, 45);
+}
+
+.add-search-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 30px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  /* Use rem units for responsive font sizes */
+}
+
+.search-button {
+  padding: 8px 15px;
+  background-color: #f98a2c;
+  color: #fff;
+  border: 1px solid #f98a2c;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  /* Use rem units for responsive font sizes */
+}
+
+.search-button:hover {
+  background-color: #fcbc85;
+  border-color: #fcbc85;
+}
+
+.action-btn {
+  display: flex;
+}

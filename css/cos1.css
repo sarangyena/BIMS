@@ -1,0 +1,122 @@
+/* General responsive styles */
+body {
+  font-family: 'Metropolis', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0; /* Add margin: 0 to remove default body margins */
+}
+
+/* Container for responsive layout */
+.container {
+  margin-top: 0px;
+  padding: 0 20px; /* Add horizontal padding for better margins on smaller screens */
+  max-width: 100%; /* Set a max-width to prevent horizontal overflow */
+}
+
+/* Responsive font sizes */
+h2 {
+  margin-bottom: 150px;
+  text-align: center;
+  color: #f98a2c;
+  font-size: 3rem; /* Use rem units for responsive font sizes */
+}
+
+/* Responsive table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 5px solid #dee2e6;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: black;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive buttons */
+.btn {
+  margin-right: 5px;
+  padding: 8px 12px; /* Adjust padding for smaller buttons */
+  font-size: 0.8rem; /* Use rem units for responsive font sizes */
+}
+
+.btn-excel {
+  background-color: #89ce00;
+  border-color: #89ce00;
+}
+
+.btn-excel:hover {
+  background-color: #5ba300;
+  border-color: #5ba300;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Responsive search bar (using media queries) */
+@media (max-width: 768px) {
+  .search-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap search bar elements on smaller screens */
+    justify-content: flex-start; /* Align buttons and search bar on separate lines */
+    margin-bottom: 0; /* Remove negative margin for proper positioning */
+  }
+
+  .search-input,  .search-button {
+    width: 100%; /* Make search input and button full width on small screens */
+    margin: 5px 0; /* Add margin for spacing */
+  }
+}
+
+/* Add this style to move search container to the left */
+.search-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap; /* Allow elements to wrap */
+}
+
+.search-input {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.search-button {
+  margin-left: auto; /* Push the button to the right */
+}
+
+
+.search-button:hover {
+  background-color: #fcbc85;
+  border-color: #fcbc85;
+}

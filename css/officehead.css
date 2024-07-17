@@ -1,0 +1,53 @@
+@media print {
+            body * {
+                visibility: hidden;
+            }
+            .print-container, .print-container * {
+                visibility: visible;
+            }
+            .print-container {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                padding: 0 20px;
+            }
+            .panel {
+                page-break-inside: avoid;
+            }
+        }
+
+.panel-body {
+    overflow: hidden;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    font-size: 24px;
+    color: #333;
+}
+
+.btn-excel {
+    background-color: #89ce00;
+    border-color: #89ce00;
+    margin-right: 10px;
+}
+
+.btn-excel:hover {
+    background-color: #5ba300;
+    border-color: #5ba300;
+}
+
+.generate-btn {
+    display: flex;
+    margin-bottom: 15px;
+}
